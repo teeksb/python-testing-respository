@@ -5,6 +5,18 @@
 # It doesn't allow duplicates
 # Keys must be unique
 
+# # Use LIST when data changes
+# Use TUPLE when data is fixed
+# Use DICT when data needs labels
+
+# examples: 
+# List → shopping list (you can add/remove items) - changing data
+
+# Tuple → GPS coordinates (fixed) - fixed data
+ 
+# Dictionary → contact card (field → value) - labeled data
+
+
 from pprint import pprint
 
 

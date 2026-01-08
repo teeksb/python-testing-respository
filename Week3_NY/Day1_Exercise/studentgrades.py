@@ -50,7 +50,7 @@ for num in range (num_students):
 
     # Check if the student passed or failed
     if student_score >= 60:
-        passed_students.append((student_name, student_score))
+        passed_students.append((student_name, student_score)) # this is a tuple
     else:
         failed_students.append((student_name, student_score))
 
@@ -65,7 +65,7 @@ print("=" * 50)
 
 print ("\nSTUDENTS WHO PASSED:")
 for student in passed_students:
-    print(f"   - {student[0]}: {student[1]}")
+    print(f"   - {student[0]}: {student[1]}")       #This is called string interpolation (is away to insert variables or expressions directly inside a string )
 else:
     print("0 (No student passed)")
 

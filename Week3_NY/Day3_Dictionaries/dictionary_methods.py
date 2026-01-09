@@ -8,7 +8,7 @@ person = {
     "kids": ["Joe", "Martha", "Sarah"]
 }
 
-# get method- sed to retrieve a dictionary method using a key name
+# get method- sed to retrieve a dictionary item using a key name
 print("First Name (with get() method):",person.get("first_name"))
 print("First Name (without method):",person["first_name"])
 
@@ -21,7 +21,38 @@ person_b = {
     "kids": ["Joe", "Martha", "Sarah"]
 }
 
+print ("***************************************")
 
-# clear method -deletes dictionary conetnbt
+# clear method - deletes dictionary
 person_b.clear()
 pprint(person_b)
+
+print("*************************")
+pprint(person)
+
+print("*************************")
+
+# copy() - creates a shallow mirror/copy of the dictionary.
+person_a = person.copy()
+pprint(person_a)
+
+print("**************************")
+# Items method - returns a list conatining a tuple of each key-value pair
+pprint(person.items())
+
+print("**************************")
+# Items method - returns a list of all the values in the dictionary
+pprint(person.values())
+
+print("**************************")
+# Keys- returns a list of all the keys in the dictionary
+pprint(person.keys())
+
+
+print("**************************")
+# Pop- removes the element with the specified key and returns the value
+lastName = person.pop("last_name")
+print("The last name is", lastName)
+pprint(person)
+pprint(person["last_name"])
+print("\n")

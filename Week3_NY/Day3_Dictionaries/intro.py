@@ -1,4 +1,4 @@
-# A dictionary is a data type used to store data values in a key value pair.
+# A dictionary is a data type used to store data values in  key-value pairs.
 # Values in a dictionary can be of any datat type.
 # Keys must be strings.
 # A dictionary is an ordered collection(as from Version 3.17) which is changeable/mutable and ordered.
@@ -19,7 +19,7 @@
 
 from pprint import pprint
 
-
+# Create dictionary using dict() constructor
 student_a = {
     "first_name": "Tosin",
     "last_name" : "Kasaba",
@@ -38,6 +38,8 @@ recent_orders = {
 }
 
 pprint(student_a)
+print("************************")
+print(student_a["age"])
 print(student_a["first_name"])
 
 

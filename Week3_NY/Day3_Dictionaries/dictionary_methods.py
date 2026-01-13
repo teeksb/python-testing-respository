@@ -9,6 +9,8 @@ person = {
 }
 
 # get method- sed to retrieve a dictionary item using a key name
+# Note that when using the get() methid, if the key provided does not exist
+# None will ene returened. Hoever, when using the square brcket an error will be thrown"
 print("First Name (with get() method):",person.get("first_name"))
 print("First Name (without method):",person["first_name"])
 

@@ -190,7 +190,7 @@ for country in countries:
 
 print("\n")
 
-# 8. Using user input, update the active cases for a specific country and recalculate the global total
+# 8. Using user input, update the active cases for a specific country 
 country_name = input("Enter country you want to update active cases for: ")
 new_active = int(input("Enter new active cases number: "))
 
@@ -199,3 +199,24 @@ if country_name in countries:
     print("8) New active cases for", country_name, "is", new_active)
 else:
     print("Country not found!")
+
+# 8b. recalculate the global total
+new_global_active = 0
+for country in countries:
+    new_global_active = new_global_active + countries[country]["active_cases"]
+
+covid19_data["global"]["active_cases"] = new_global_active  # update global active cases in data
+
+print("8b)New total global active cases is:", covid19_data["global"]["active_cases"])
+
+print("\n")
+
+# 9) Calculate what percentage of global active cases each country represents. Represent the result as a dictionary.
+global_percentage_country = {}
+global_active = covid19_data["global"]["active_cases"]
+
+for country in countries:
+    active = countries[country]["active_cases"]
+    global_percentage_country[country] = (active / global_active) * 100
+
+print("9) The percentage of global active cases for each country are:","\n", global_percentage_country)

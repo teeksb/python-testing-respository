@@ -1,4 +1,7 @@
-
+# What is a CSV - COmma-Seperated Values
+# First line is usually - header
+# Every line after - datat row
+# Everything is read as strings
 
 # Step 1: Opening and Reading a File
 file = open("Sample - Superstore.csv", "r") #This line opens a file called Sample - Superstore.csv
@@ -19,11 +22,14 @@ print(content) #prints the file's content to the screen.
 
 
 # Absolute file path: Path to the file on your laptop/deskop or cloud/online - from root to end - files can be traced down to roor
+# full address from the root of the system
 # e.g C:\Users\Jubril\Documents\Python_Training\Week4_DIctionaries2\Day3_CSV
 
 
-# Relative file path: Path to the file relative to the Python file importing it.
-#e.g # C:\Users\ADMIN\Source\Data Science Bootcamp\Cohort 2\Week_5_-Working_with_Files\Sample - Superstore.csv
+# Relative file path: Path to the file relative to the Python file importing it. - address relative to where the script runs
+# Relative paths are more portable because they don’t depend on a specific machine’s directory structure and work across environments.
+#e.g Week4_DIctionaries2\Day3_CSV
+
 
 
 # Which should you use?
@@ -43,23 +49,25 @@ print(content) #prints the file's content to the screen.
 # file_ = open("Sample - Superstore.csv", "r")
 
 # # Read first line (header)
-# header = file_.readline()
-# header.split(",")
+# header = file_.readline().strip()
+# header.strip().split(",")
 
 # # Read all other lines
 # for line in file_:
-#     print(line.split(","))
+#     print(line.strip().split(","))
 #     print("="*20)
 
 # file_.close()
 
 
-# Step 3: Using 'with' statement (Best practice)
+# Step 2: Using 'with' statement (Best practice)
+# with open() automatically closes the file, even if an error occurs, making file handling safer and less error-prone.
+# Reading files line by line reduces memory usage and prevents large or unexpected files from crashing data pipelines or slowing systems at scale.
 with open("Sample - Superstore.csv", "r") as file:
     # Read header
-    header = file.readline().strip()
+    header = file.readline().strip() #file.readline() reads one full line from the file and moves the file pointer to the next line.
     print("Columns:", header)
 
     for line in file:
-        print(line.strip())
+        print(line.strip().split(","))
         print("="*20)

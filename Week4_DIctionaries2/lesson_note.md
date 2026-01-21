@@ -26,7 +26,7 @@
 ## File Modes (Flags)
 
 | Mode | Description |
-|------|-------------|
+|------------------|
 | `'r'` | Read (default) - open for reading |
 | `'w'` | Write - create new file or overwrite existing |
 | `'a'` | Append - add to end of file |

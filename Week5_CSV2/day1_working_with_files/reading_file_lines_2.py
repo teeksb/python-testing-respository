@@ -15,3 +15,9 @@ file_.close()
 with open('files/example.txt', 'r') as file:
     lines = file.readlines()
     print(lines)  # List of strings, one per line
+
+# OR - to not get the newlines
+with open("files/example.txt") as file:
+    lines = [line.strip() for line in file]
+
+print(lines)

@@ -115,6 +115,7 @@ for country in countries:
         highest_country = country
 
 print("1) Highest country with active cases is:",highest_country, "with", highest_active_cases, "cases")
+print(f"1) Highest country with active cases is:{highest_country} with {highest_active_cases:,} cases")
 print("\n")
 # 2. Ratio of active cases to population for each country
 active_to_population_ratio = {}
@@ -122,7 +123,7 @@ active_to_population_ratio = {}
 for country in countries:
     active = countries[country]["active_cases"]
     population = countries[country]["population"]
-    active_to_population_ratio[country] = active/population
+    active_to_population_ratio[country] = (active/population) * 100
 
 print("2) Ratio of active cases to population for each country is: ", "\n", active_to_population_ratio)
 print("\n")

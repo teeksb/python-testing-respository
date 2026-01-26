@@ -1,5 +1,7 @@
 from datetime import datetime
 
+
+
 file_path = "files/log.txt"
 
 # Add content to the end of an existing file

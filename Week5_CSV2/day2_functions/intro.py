@@ -3,6 +3,7 @@
 # WIthout finctions , you'd repeat code everywhere- define it once , call it whenever needed.
 # Functios always return a value
 # "def" defines functions
+# Functions are first class citizens in python
 
 # def <name of function>:
 #     function body (must be 1 to ~ number of lines)

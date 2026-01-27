@@ -37,7 +37,7 @@ print("*****************************************************")
 discount_rate = 0.10
 
 def calculate_discount (price):
-    discount = price * discount
+    discount = price * discount_rate
     return discount
 print(calculate_discount(800))
 

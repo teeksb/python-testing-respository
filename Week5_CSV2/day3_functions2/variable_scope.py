@@ -18,16 +18,16 @@ print(customer_name) #Works! Prints: Alice
 # Local Scope 
 # Variables created isnide a function - only within the functon can it be used.
 
-def calculate_tax():
-    tax_rate = 0.08  #This variabke only exists inside the function
-    return tax_rate * 100
+# def calculate_tax():
+#     tax_rate = 0.08  #This variabke only exists inside the function
+#     return tax_rate * 100
 
-print(calculate_tax())  # Works! Prints 8.0
+# print(calculate_tax())  # Works! Prints 8.0
 
-try:
-    print(tax_rate) # ERROR! Can't see tax_rate outside the "calculate_tax() function" becasue it was definded inside the functi
-except:
-    print("Can't see tax_rate outside the 'calculate_tx' function")
+# try:
+#     print(tax_rate) # ERROR! Can't see tax_rate outside the "calculate_tax() function" becasue it was definded inside the functi
+# except:
+#     print("Can't see tax_rate outside the 'calculate_tx' function")
 
 
 

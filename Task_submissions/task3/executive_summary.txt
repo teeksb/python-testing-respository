@@ -1,0 +1,58 @@
+EXECUTIVE SUMMARY REPORT
+========================
+
+REVENUE METRICS
+--------------
+Total Revenue: $2,297,200.86
+Total Profit: $286,397.02
+Total Quantity Sold: 37873
+Average Order Value: $229.86
+Profit Margin (%): 12.47%
+
+TOP REGIONS BY SALES
+--------------------
+West: Sales=$725,457.82, Profit=$108,418.45
+East: Sales=$678,781.24, Profit=$91,522.78
+Central: Sales=$501,239.89, Profit=$39,706.36
+South: Sales=$391,721.91, Profit=$46,749.43
+
+TOP CATEGORIES BY SALES
+-----------------------
+Technology: Sales=$836,154.03, Profit=$145,454.95
+Furniture: Sales=$741,999.80, Profit=$18,451.27
+Office Supplies: Sales=$719,047.03, Profit=$122,490.80
+
+TOP 10 PRODUCTS BY SALES
+------------------------
+Canon imageCLASS 2200 Advanced Copier: $61,599.82
+Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind: $27,453.38
+Cisco TelePresence System EX90 Videoconferencing Unit: $22,638.48
+HON 5400 Series Task Chairs for Big and Tall: $21,870.58
+GBC DocuBind TL300 Electric Binding System: $19,823.48
+GBC Ibimaster 500 Manual ProClick Binding System: $19,024.50
+Hewlett Packard LaserJet 3310 Copier: $18,839.69
+HP Designjet T520 Inkjet Large Format Printer - 24" Color: $18,374.90
+GBC DocuBind P400 Electric Binding System: $17,965.07
+High Speed Automatic Electric Letter Opener: $17,030.31
+
+DISCOUNT INSIGHTS
+-----------------
+Average discount by category:
+  Furniture: 0.17
+  Office Supplies: 0.16
+  Technology: 0.13
+
+Profit margin comparison:
+  Discounted margin: -2.86%
+  Non-discounted margin: 29.51%
+
+LOSS MAKERS
+-----------
+Orders with negative profit: 1871
+Total loss amount: $156,131.29
+Top 5 products by total loss:
+  Cubify CubeX 3D Printer Double Head Print: -$9,239.97
+  GBC DocuBind P400 Electric Binding System: -$6,859.39
+  Lexmark MX611dhe Monochrome Laser Printer: -$5,269.97
+  GBC Ibimaster 500 Manual ProClick Binding System: -$5,098.57
+  GBC DocuBind TL300 Electric Binding System: -$4,162.03

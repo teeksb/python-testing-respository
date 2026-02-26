@@ -42,8 +42,9 @@ def build_customer_profiles(transactions):
                 "total_spent": 0,
             }
 
-        customer_profiles["transactions"].append(tx)
-        customer_profiles["total_spent"] += tx["Purchase_Amount"]
+        customer_profiles[customer_id]["transactions"].append(tx)
+        customer_profiles[customer_id]["total_spent"] += tx["Purchase_Amount"]
+        customer_profiles[customer_id]["total_transactions"] += 1
 
     return customer_profiles
 
@@ -83,6 +84,11 @@ def display_customer_summary(customer_profiles):
 
     # 4. TODO: Most Active Customer (Customer with the most number of transactions)
 
+    most_active_customer = max(
+    customer_profiles.values(),
+    key=lambda x: x["total_transactions"]
+)
+
     # 5. Most-Valuable Customer (Highest Spending Customer)
     mvp_customer = max(customer_profiles.values(), key=lambda x: x["total_spent"])
 
@@ -91,6 +97,7 @@ def display_customer_summary(customer_profiles):
         "avg_tx_count_per_customer": avg_transactions,
         "avg_spend_per_customer": avg_clv,
         "mvp_customer": mvp_customer,
+        "most_active_customer" : most_active_customer
     }
 
 def main():
@@ -107,7 +114,22 @@ def main():
     #     Average Customer Lifetime Value: $487.65
     #     Most Active Customer: CUST-0456 (23 transactions)
     #     Highest Spending Customer: CUST-0892 ($3,456.78)
-    # ```
+    # ```     print("\nCUSTOMER DATABASE SUMMARY")
+    print("=" * 30)
+
+    print(f"Total Customers: {customer_summary['total_customers']:,}")
+    print(f"Average Transactions per Customer: {customer_summary['avg_tx_count_per_customer']:.1f}")
+    print(f"Average Customer Lifetime Value: ${customer_summary['avg_spend_per_customer']:,.2f}")
+
+    print(
+        f"Most Active Customer: {customer_summary['most_active_customer']['id']} "
+        f"({customer_summary['most_active_customer']['total_transactions']} transactions)"
+    )
+
+    print(
+        f"Highest Spending Customer: {customer_summary['mvp_customer']['id']} "
+        f"(${customer_summary['mvp_customer']['total_spent']:,.2f})"
+    )
 
 if __name__ == "__main__":
     main()

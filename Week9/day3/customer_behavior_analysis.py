@@ -122,14 +122,11 @@ def main():
     print(f"Average Customer Lifetime Value: ${customer_summary['avg_spend_per_customer']:,.2f}")
 
     print(
-        f"Most Active Customer: {customer_summary['most_active_customer']['id']} "
-        f"({customer_summary['most_active_customer']['total_transactions']} transactions)"
+        f"Most Active Customer: {customer_summary['most_active_customer']['id']}({customer_summary['most_active_customer']['total_transactions']} transactions)"
     )
 
     print(
-        f"Highest Spending Customer: {customer_summary['mvp_customer']['id']} "
-        f"(${customer_summary['mvp_customer']['total_spent']:,.2f})"
-    )
+        f"Highest Spending Customer: {customer_summary['mvp_customer']['id']} (${customer_summary['mvp_customer']['total_spent']:,.2f})")
 
 if __name__ == "__main__":
     main()

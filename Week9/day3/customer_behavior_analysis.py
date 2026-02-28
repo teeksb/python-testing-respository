@@ -123,7 +123,7 @@ def main():
 
     print(
         f"Most Active Customer: {customer_summary['most_active_customer']['id']}({customer_summary['most_active_customer']['total_transactions']} transactions)"
-    )
+)
 
     print(
         f"Highest Spending Customer: {customer_summary['mvp_customer']['id']} (${customer_summary['mvp_customer']['total_spent']:,.2f})")

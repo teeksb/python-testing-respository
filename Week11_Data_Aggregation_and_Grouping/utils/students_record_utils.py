@@ -14,6 +14,6 @@ def load_student_records(filename: str):
         df[col] = pd.to_numeric(df[col], errors="coerce")
 
     
-    pd.to_numeric(df["attendance_rate"], errors="coerce")
+    pd.to_numeric(df["attendance"], errors="coerce")
 
     return df

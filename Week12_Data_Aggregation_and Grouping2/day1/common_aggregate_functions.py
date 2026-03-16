@@ -1,6 +1,6 @@
-from utils.students_record_utils import load_students
+from utils.students_record_utils import load_student_records
 
-students_df = load_students("../data/students.csv")
+students_df = load_student_records("../data/students.csv")
 
 class_groups = students_df.groupby("class_level")
 
